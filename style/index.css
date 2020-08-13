@@ -1,1 +1,99 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 10%;
+}
+h1{ 
+    font-size: 10rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+
+}
+a{
+    border: 1px solid gold;
+    color: gold;
+    text-decoration: none;
+    background-color: purple;
+    padding: 10%;
+    margin: 2%;
+    font-size: 2rem;
+}
+
+.big-img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(https://picsum.photos/200);
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+
+.big-img h1{
+    -webkit-text-stroke: 1px purple;
+    font-weight: bold;
+}
+.big-img a{
+    padding: 1%;
+}
+
+.imgs-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.imgs-container h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+}
+hr{
+    margin: 5% 0%;
+}
+
+footer{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.social-media{
+    display: flex;
+}
+
+
