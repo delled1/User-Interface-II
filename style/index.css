@@ -28,6 +28,9 @@ body{
 }
 h1{ 
     font-size: 10rem;
+    -webkit-text-stroke: 1px purple;
+    font-weight: bold;
+    
 }
 header{
     display: flex;
@@ -41,14 +44,15 @@ nav{
     margin-right: 10%;
 
 }
-a{
+header nav a{
     border: 1px solid gold;
     color: gold;
     text-decoration: none;
     background-color: purple;
-    padding: 10%;
+    padding: 5%;
     margin: 2%;
     font-size: 2rem;
+
 }
 
 .big-img{
@@ -60,14 +64,16 @@ a{
     justify-content: center;
     align-items: center;
     color: gold;
+    margin: 3% auto;
 }
 
-.big-img h1{
-    -webkit-text-stroke: 1px purple;
-    font-weight: bold;
-}
+
 .big-img a{
-    padding: 1%;
+    padding: 2%;
+    background-color: purple;
+    color: gold;
+    font-size: 2rem;
+    border-radius: 25%;
 }
 
 .imgs-container{
@@ -80,20 +86,25 @@ a{
     text-align: center;
     padding: 2%;
     font-size: 2rem;
+    margin: 5% 0 0 0;
 }
 hr{
-    margin: 5% 0%;
+    margin: 3% 0%;
 }
 
 footer{
-    justify-content: center;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: bisque;
+    height: 10vh;
 }
 
-.social-media{
-    display: flex;
+footer a{
+    color: purple;
+    text-decoration: none;
 }
 
 
