@@ -48,7 +48,7 @@ header nav a{
     border: 1px solid gold;
     color: gold;
     text-decoration: none;
-    background-color: purple;
+    background-color: #8e44ad;
     padding: 5%;
     margin: 2%;
     font-size: 2rem;
@@ -70,12 +70,79 @@ header nav a{
 
 .big-img a{
     padding: 2%;
-    background-color: purple;
+    background-color: #8e44ad;
     color: gold;
     font-size: 2rem;
     border-radius: 25%;
 }
 
+.big-img a {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+  }
+  .big-img a:hover, .big-img a:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .big-img a {
+    border-color: #8e44ad;
+    background-color: gold;
+    border-radius: 0;
+    color: #8e44ad;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  .big-img a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #8e44ad;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  .big-img a:hover {
+    color: gold;
+    font-weight: bolder;
+  }
+  .big-img a:hover:after {
+    width: 110%;
+  }
+  
 .imgs-container{
     display: flex;
     justify-content: space-between;
@@ -87,6 +154,11 @@ header nav a{
     padding: 2%;
     font-size: 2rem;
     margin: 5% 0 0 0;
+}
+
+.imgs-container div img:hover{
+    border: 1px solid red;
+    border-radius: 50%;
 }
 hr{
     margin: 3% 0%;
@@ -103,7 +175,7 @@ footer{
 }
 
 footer a{
-    color: purple;
+    color: #8e44ad;
     text-decoration: none;
 }
 
