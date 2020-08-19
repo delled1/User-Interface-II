@@ -41,7 +41,8 @@ header{
 nav{
     display: flex;
     align-items: center;
-    margin-right: 10%;
+    justify-content: flex-end;
+    width: 50%;
 
 }
 header nav a{
@@ -49,8 +50,7 @@ header nav a{
     color: gold;
     text-decoration: none;
     background-color: #8e44ad;
-    padding: 5%;
-    margin: 2%;
+    padding: 2%;
     font-size: 2rem;
 
 }
@@ -147,6 +147,8 @@ header nav a{
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .imgs-container h2{
@@ -180,3 +182,84 @@ footer a{
 }
 
 
+@media (max-width: 800px){
+    h1{
+        font-size: 8rem;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: gold;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+    }
+    footer{
+        background-color: gold;
+    }
+    footer a{
+        color: #8e44ad;
+    }
+
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 6rem;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #8e44ad;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+    }
+    footer{
+        background-color: #8e44ad;
+    }
+    footer a{
+        color: gold;
+    }
+}
