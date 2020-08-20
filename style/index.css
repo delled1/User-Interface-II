@@ -290,3 +290,40 @@ footer a{
         color: #EEE8AA;
     }
 }
+@media (min-width: 1920px){
+    h1{
+        font-size: 15rem;
+    }
+
+    .imgs-container div h2{
+        font-size: 5rem;
+    }
+
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    } 
+    footer{
+        background-color: #8e44ad;
+    }
+    footer a{
+        color: #EEE8AA;
+    }
+}
