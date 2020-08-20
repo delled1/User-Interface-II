@@ -28,8 +28,9 @@ body{
 }
 h1{ 
     font-size: 10rem;
-    -webkit-text-stroke: 1px purple;
+    -webkit-text-stroke: 2px #8e44ad;
     font-weight: bold;
+    color: black;
     
 }
 header{
@@ -46,8 +47,8 @@ nav{
 
 }
 header nav a{
-    border: 1px solid gold;
-    color: gold;
+    border: 1px solid #EEE8AA;
+    color: #EEE8AA;
     text-decoration: none;
     background-color: #8e44ad;
     padding: 2%;
@@ -63,15 +64,13 @@ header nav a{
     height: 50rem;
     justify-content: center;
     align-items: center;
-    color: gold;
     margin: 3% auto;
 }
-
 
 .big-img a{
     padding: 2%;
     background-color: #8e44ad;
-    color: gold;
+    color: #EEE8AA;
     font-size: 2rem;
     border-radius: 25%;
 }
@@ -111,7 +110,7 @@ header nav a{
 
   .big-img a {
     border-color: #8e44ad;
-    background-color: gold;
+    background-color: #EEE8AA;
     border-radius: 0;
     color: #8e44ad;
     position: relative;
@@ -136,7 +135,7 @@ header nav a{
     transition: width 150ms ease-in-out;
   }
   .big-img a:hover {
-    color: gold;
+    color: #EEE8AA;
     font-weight: bolder;
   }
   .big-img a:hover:after {
@@ -147,9 +146,22 @@ header nav a{
     display: flex;
     justify-content: space-between;
     margin-top: 5%;
-    max-width: 100%;
+    width: 100%;
     flex-wrap: wrap;
 }
+.imgs-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .imgs-container div div{
+    width: 33%;
+    height: auto;
+    background-image: url(https://picsum.photos/200) ;
+} */
+
 
 .imgs-container h2{
     text-align: center;
@@ -209,13 +221,21 @@ footer a{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        background-color: gold;
+        background-color: #EEE8AA;
+        color: #8e44ad;
     }
     .imgs-container div{
         margin-top: 5%;
+        width: 40%;
     }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    }
+ 
     footer{
-        background-color: gold;
+        background-color: #EEE8AA;
     }
     footer a{
         color: #8e44ad;
@@ -252,14 +272,21 @@ footer a{
         align-items: center;
         justify-content: center;
         background-color: #8e44ad;
+        color: #EEE8AA;
     }
     .imgs-container div{
         margin-top: 5%;
+        width: 50%;
     }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    } 
     footer{
         background-color: #8e44ad;
     }
     footer a{
-        color: gold;
+        color: #EEE8AA;
     }
 }
