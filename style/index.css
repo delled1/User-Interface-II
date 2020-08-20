@@ -1,1 +1,329 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 10%;
+}
+h1{ 
+    font-size: 10rem;
+    -webkit-text-stroke: 2px #8e44ad;
+    font-weight: bold;
+    color: black;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+
+}
+header nav a{
+    border: 1px solid #EEE8AA;
+    color: #EEE8AA;
+    text-decoration: none;
+    background-color: #8e44ad;
+    padding: 2%;
+    font-size: 2rem;
+
+}
+
+.big-img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(https://picsum.photos/200);
+    height: 50rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+}
+
+.big-img a{
+    padding: 2%;
+    background-color: #8e44ad;
+    color: #EEE8AA;
+    font-size: 2rem;
+    border-radius: 25%;
+}
+
+.big-img a {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+  }
+  .big-img a:hover, .big-img a:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .big-img a {
+    border-color: #8e44ad;
+    background-color: #EEE8AA;
+    border-radius: 0;
+    color: #8e44ad;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 150ms ease-in-out;
+    transition: color 150ms ease-in-out;
+  }
+  .big-img a:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #8e44ad;
+    z-index: -1;
+    -webkit-transition: width 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
+  }
+  .big-img a:hover {
+    color: #EEE8AA;
+    font-weight: bolder;
+  }
+  .big-img a:hover:after {
+    width: 110%;
+  }
+  
+.imgs-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.imgs-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .imgs-container div div{
+    width: 33%;
+    height: auto;
+    background-image: url(https://picsum.photos/200) ;
+} */
+
+
+.imgs-container h2{
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+    margin: 5% 0 0 0;
+}
+
+.imgs-container div img:hover{
+    border: 1px solid red;
+    border-radius: 50%;
+}
+hr{
+    margin: 3% 0%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: bisque;
+    height: 10vh;
+}
+
+footer a{
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px){
+    h1{
+        font-size: 8rem;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #EEE8AA;
+        color: #8e44ad;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+        width: 40%;
+    }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    }
+ 
+    footer{
+        background-color: #EEE8AA;
+    }
+    footer a{
+        color: #8e44ad;
+    }
+
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 6rem;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-container nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #8e44ad;
+        color: #EEE8AA;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    } 
+    footer{
+        background-color: #8e44ad;
+    }
+    footer a{
+        color: #EEE8AA;
+    }
+}
+@media (min-width: 1920px){
+    h1{
+        font-size: 15rem;
+    }
+
+    .imgs-container div h2{
+        font-size: 5rem;
+    }
+
+    .header-container nav a{
+        margin: 0;
+        width: 100px;
+        text-align: center;
+    }
+    
+    .imgs-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgs-container div{
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    .imgs-container div img{
+        max-width: 75%;
+        height: auto;
+    } 
+    footer{
+        background-color: #8e44ad;
+    }
+    footer a{
+        color: #EEE8AA;
+    }
+}
